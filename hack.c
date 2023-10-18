@@ -19,3 +19,24 @@ double calculateDistance(double la1 , double lo1, double la2 , double la2 , doub
     double c = 2 * atan2(sqrt(a), sqrt(1 - a));
 
 }
+int main()
+{
+    double la1,lo1,la2,lo2;
+    printf("Enter the latitude and longitude of the origin in degrees");
+    printf("latitude ");
+    scanf("%f",&la1);
+    printf("longitude");
+    scanf("%f",&lo1);
+
+    printf("Enter latitude and longitude of the destination in degrees : \n");
+    printf("latitude ");
+    scanf("%f"&la2);
+    scanf("%f"&lo2);
+
+    double distance = calculatedDistance(la1,lo1,la2,lo2);
+    printf("Air distance is ",distance);
+     
+     return 0;
+     
+
+}
