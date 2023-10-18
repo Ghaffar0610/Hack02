@@ -1,17 +1,18 @@
 #include<stdio.h>
-#include<stdio.h>
+#include<math.h>
 
+#define EARTH_RADIUS 6371.0
 double degreesToRadians(double degrees)
 {
-    return degrees* M_PI /180.0;
+    return (degrees* 3.14915) /180.0;
 
 }
 
-double calculateDistance(double la1 , double lo1, double la2 , double la2 , double lo2){
-    la1 = degreesTORadians(la1);
-    lo1 = degreesToRadians(lo1);
-    la2 = degreesToRadians(la2);
-    lo2 = degreesToRadians(lo2);
+double calculatedDistance(double la1 , double lo1, double la2  , double lo2){
+    la1 =(la1);
+    lo1 = (lo1);
+    la2 = (la2);
+    lo2 = (lo2);
 
     double dla = la2-la1;
     double dlo = lo2-lo1;
@@ -32,8 +33,8 @@ int main()
 
     printf("Enter latitude and longitude of the destination in degrees : \n");
     printf("latitude ");
-    scanf("%f"&la2);
-    scanf("%f"&lo2);
+    scanf("%lf",&la2);
+    scanf("%lf",&lo2);
 
     double distance = calculatedDistance(la1,lo1,la2,lo2);
     printf("Air distance is ",distance);
