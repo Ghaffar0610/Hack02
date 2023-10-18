@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include<stdio.h>
 
-double degreesToRadians(double degrees){
+double degreesToRadians(double degrees)
+{
     return degrees* M_PI /180.0;
 
 }
@@ -21,7 +22,8 @@ double calculateDistance(double la1 , double lo1, double la2 , double la2 , doub
 }
 int main()
 {
-    double la1,lo1,la2,lo2;
+    double la1,lo1;
+    double la2,lo2;
     printf("Enter the latitude and longitude of the origin in degrees");
     printf("latitude ");
     scanf("%f",&la1);
@@ -37,6 +39,6 @@ int main()
     printf("Air distance is ",distance);
      
      return 0;
-     
+
 
 }
