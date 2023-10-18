@@ -43,3 +43,12 @@ int main()
 
 
 }
+
+// OUTPUT FOR THIS CODE
+Enter the latitude and longitude of the origin in degrees:
+Latitude: 37.7749
+Longitude: -122.4194
+Enter the latitude and longitude of the destination in degrees:
+Latitude: 40.7128
+Longitude: -74.0060
+Air distance is is 4137.870 kilometers
